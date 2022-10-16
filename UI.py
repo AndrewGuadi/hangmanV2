@@ -8,8 +8,8 @@ class UI(GameLetters):
         self.current_letter = ''
         self.board_letters = []
         self.guessed_letters = []
-        self.wrong_guesses = 0
-        self.hangman_drawings = [(""),("O"),(" O\n |"),(" O\n |\n/"),(" O\n |\n/ \\"),(" O\n/|\n/ \\"),(" O\n/|\\ \n/ \\")]      
+        self.hangman_drawings = [(" _____\n|     |\n|\n|\n|\n|\n__"),(" _____\n|     |\n|     O\n|\n|\n|\n__"),(" _____\n|     |\n|     O\n|     |\n|\n|\n__"),
+        (" _____\n|     |\n|     O\n|    /|\n|\n|\n__"),(" _____\n|     |\n|     O\n|    /|\\\n|\n|\n__"),(" _____\n|     |\n|     O\n|    /|\\\n|    /\n|\n__"),(" _____\n|     |\n|     O\n|    /|\\\n|    / \\\n|\n__")]       
     def get_hangman_drawing(self, failed_attempts):
         
         return self.hangman_drawings[failed_attempts]
